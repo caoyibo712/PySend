@@ -1,6 +1,4 @@
 # Echo client program
-from  socket import *
-
 
   # The remote host   
 path=input('PATH')

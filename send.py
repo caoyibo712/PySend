@@ -1,5 +1,5 @@
 # Echo server program
-from socket import *
+
 def send(path):
     host =  gethostbyname(gethostname())
 
