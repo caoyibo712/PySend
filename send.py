@@ -1,6 +1,6 @@
 # Echo server program
 
-def _send(path):
+def send(path):
     host =  gethostbyname(gethostname())
 
     with socket(AF_INET, SOCK_STREAM) as s:
@@ -19,4 +19,4 @@ def _send(path):
     f.flush()
     F.close()
     f.close()
-    return key36( host )
+    return key36(host)
