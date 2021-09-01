@@ -1,6 +1,6 @@
 # Echo server program
 
-def send(path):
+def _send(path):
     host =  gethostbyname(gethostname())
 
     with socket(AF_INET, SOCK_STREAM) as s:

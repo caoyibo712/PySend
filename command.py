@@ -14,4 +14,5 @@ class fileCmd(cmd.Cmd):
         get(arg.split('&'))
         print('OK')
 
-
+if __name__=='__main__':
+    C=fileCmd().cmdloop()
