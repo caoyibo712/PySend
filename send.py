@@ -1,7 +1,16 @@
 # Echo server program
+key=key36(host)
+host =gethostbyname(gethostname()) 
 
-def send(path):
-    host =  gethostbyname(gethostname())
+def _send(paths):
+    pathl=paths.split(',')
+    for path in pathl:
+        sendcore(path)
+    print('{k}[0-{n}]'.format(key,
+      
+
+def sendcore(path):
+    gobal key,host
 
     with socket(AF_INET, SOCK_STREAM) as s:
         s.bind((host, 9999))
@@ -19,4 +28,3 @@ def send(path):
     f.flush()
     F.close()
     f.close()
-    return key36(host)
