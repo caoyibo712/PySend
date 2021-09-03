@@ -11,8 +11,6 @@ class fileCmd(cmd.Cmd):
         print(send(arg))
 
     def do_get(self,arg):
-        get(arg.split('&'))
-        print('OK')
+        get(arg)
+ 
 
-if __name__=='__main__':
-    C=fileCmd().cmdloop()

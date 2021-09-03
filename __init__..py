@@ -1,3 +1,5 @@
 
 from  socket import *
-from .APIs import *
+from . import *
+C=command.fileCmd()
+C.cmdloop()

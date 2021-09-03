@@ -1,4 +1,4 @@
-def _host36(key):
+def host36(key):
     key=t10(key)
     key=hex(key)
     keyArr=key[3:].split('')
@@ -11,7 +11,7 @@ def _host36(key):
     outputArr[]=[int(x,16) for x in outputArr[]]
     return '.'.join(outputArr[])
     
-def _key36(host):
+def key36(host):
     #g-36
     hos[]=host.replace(' ','').split('.',)
     host.join(
@@ -22,7 +22,7 @@ def _key36(host):
 num_36l=[chr(x) for x in  range(48,57) ][chr(y) for y in range(97,122)]
 num_36d=dict(zip(num_36l,range(0,36)))
 
-def _t36(value):
+def t36(value):
     val_l=[]
     while value>35:
         a,value= value//36,value%36
@@ -31,7 +31,7 @@ def _t36(value):
     
     return [num_36l[x] for x in val_l]
 
-def _t10(value):
+def t10(value):
     val_10=0
     for d,c in value,range(len(value)):
         val_10+=num_36d[d]*(36**c)
